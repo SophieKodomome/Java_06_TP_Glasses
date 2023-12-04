@@ -1,0 +1,63 @@
+0-Before Hand:(25)
+    (ok)Download OpenCV
+    (ok)Donwload TensorFlow(???)
+    (ok)Download Glasses Pictures(4)
+    Photoshop Glasses(5 each)
+    Picture of people(multiple)
+    App Sketch
+    Check OpenCV lib Working
+    Check TensorFlow Working
+
+(ok)1.DataBase:(25 min)
+    (ok)Create user solo/maso
+    (ok)Create Sequence Monture,Lenses
+    (ok)Create Table:
+        (ok)Monture(id,nom,img,prix,stock)
+        (ok)Lenses(id,nom,img,prix,stock)
+        (ok)Log(id,idMonture,idLenses,prix,stock)
+
+2.Classes:
+    API:(25 min)
+        (ok)Monture(id,nom,img,prix,stock)
+        (ok)Lenses(id,nom,img,pric,stock)
+        Transaction(id,idMonture,idLenses,prix,stock)
+        Connection(static)
+            (ok)getMontureList
+            (ok)getLensesList
+            getTransactionList
+            updateStock
+
+    Front:(100 min w/images)
+        Visuel Monture(JPanel(BorderLayout))
+            image(CENTER)
+            (ok)Panel(SOUTH,FlowLayout)
+            (ok)    Nom
+             (ok)   prix
+                ButtonConfirmer
+                    event(see Football)
+
+        VisuelLenses(JPanel(BorderLayout()))
+            image(CENTER)
+            (ok)Panel(SOUTH,FlowLayout)
+            (ok)    Nom
+            (ok)    prix
+                ButtonConfirmer
+                    event(see Project Football)
+
+        (ok)pageSelection
+        (ok)Fenetre
+            pageSelection
+                FlowLayout
+                (ok)CENTER:
+                    (ok)GridLayout(3,0)
+                        (ok)Face
+                        (ok)GridLayout(0,2)
+                           (ok) ScrollMonture
+                                (ok)VisuelMonture
+                           (ok) ScrollLenses
+                                (ok)VisuelLenses
+                SOUTH
+                    buttonAchat     
+            
+            pageConfirmation(or test if I can reload the database after event achat)
+
